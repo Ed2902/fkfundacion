@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Indicar la ubicación del sitemap
+Sitemap: https://latinamericametals.com/sitemap.xml

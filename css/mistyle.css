@@ -1,0 +1,443 @@
+/************************paleta de colores 
+#014721 verde oscuro
+#442107 cafe secundario
+#ffffff blanco principal
+*************/
+/* Justifica párrafos, listas y otros elementos de texto */
+p, ul, ol, li {
+    text-align: justify;
+}
+
+
+
+.text-primary{
+    color: #014721 !important;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8); /* Sombra bien marcada */
+
+}
+
+h1{
+    color: #000000 !important;
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #014721; /* Cambia #ff0000 al color*/
+    border-radius: 50%; /*hace que el ícono sea circular */
+}
+
+
+.text-custom-color {
+    color: #000000 !important; /* Color del texto */
+    background-color: #47474703; /* Fondo gris oscuro */
+    text-shadow: #fff 0 0 10px, 1px 1px 1px rgba(255, 255, 255, 0.718); /* Sombra de texto combinada */
+    display: inline; /* Asegura que el fondo solo se aplique al texto */
+    padding: 0 5px; /* Relleno lateral para que el fondo no quede pegado al texto */
+    border-radius: 5px; /* Un pequeño redondeo opcional para el fondo */
+}
+
+
+
+.text-white {
+    color: #442107 !important;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255); /* Sombra bien marcada */
+
+}
+
+.btn-outline-primary{
+    color: #b58249;
+    border-color: #DA9F5B;
+}
+
+.btn-primary {
+    background-color: #ffffff !important;
+    border-color: #029042 !important; 
+    box-shadow: 0 4px 8px rgb(1, 71, 33); /* Sombra del botón */
+    
+}
+
+.btn-primary:hover {
+    background-color: #014721 !important; /* Cambia a otro color al pasar el mouse */
+    border-color: #000000 !important; /* Puedes mantener el mismo color de borde o cambiarlo */
+    color: #FFFFFF;
+}
+
+.btn-secondary {
+    background-color: #ffffff !important;
+    border-color: #442107 !important;
+    box-shadow: 0 4px 8px rgba(68, 33, 7); /* Sombra del botón */
+    color: #000000 !important; 
+}
+
+.btn-secondary:hover{
+    background-color: #442107 !important;
+    border-color: #442107 !important;
+    box-shadow: 0 4px 8px rgba(68, 33, 7); /* Sombra del botón */
+    color: #fffefe !important;
+}
+
+.section-title::after{
+    background-color: #2E2ED2 !important;
+}
+
+/* Estilos del header */
+header {
+    width: 100%;
+    z-index: 100;
+    transition: background-color 0.3s ease, margin-bottom 0.3s ease;
+}
+
+
+.logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-left: 25%;
+}
+
+/* Estilo inicial de la navbar */
+#navbar {
+    position: fixed; /* Fija el navbar a la parte superior */
+    top: 0;
+    left: 0;
+    height: 125px;
+    margin-top: 15px;
+    width: 100%; /* Asegura que el navbar ocupe el 100% del ancho de la pantalla */
+    z-index: 1000; /* Asegura que esté por encima de todo el contenido */
+    background-color: transparent; /* Inicialmente, el fondo será transparente */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Estilo de la navbar cuando se hace scroll (fondo oscuro) */
+.bg-dark {
+    background-color: #014721; /* Cambia el fondo a oscuro al hacer scroll */
+}
+
+/* Estilo inicial de la navbar con fondo transparente */
+#navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;  /* Transición suave */
+}
+
+/* Cambiar color cuando la navbar esté "scrolled" */
+#navbar.scrolled {
+    
+
+
+}
+
+.overlay-bottom {
+    /* background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */ 
+}
+
+.carousel-caption {
+   margin-top: 0%;
+}
+
+.carousel-caption h2 {
+    filter: drop-shadow(1px 1px 1px rgba(27, 32, 33, 0.722)); 
+    color: #fefefe !important; /* Asegúrate de que el color se aplique */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.916); /* Sombra bien marcada */
+}
+
+.carousel-item img {
+    max-height: 800px; /* Ajusta este valor a la altura máxima que desees */
+    object-fit: cover; /* Asegúrate de que las imágenes se ajusten correctamente */
+}
+
+.carousel-item.active img {
+    max-width: 100%; /* Ajusta este valor según el tamaño que desees */
+    height: 800px;   /* Mantener la proporción de la imagen */
+    object-fit: cover; /* Para asegurarte de que la imagen mantenga su proporción */
+    margin: 0 auto; /* Centra la imagen en su contenedor */
+}
+
+
+/* Sombra para el logo SVG sin fondo */
+.navbar-brand img {
+    filter: drop-shadow(4px 1px 4px rgba(1, 192, 255, 0.055)); /* Ajusta la distancia, el desenfoque y la opacidad */
+}
+
+
+.navbar-dark .navbar-nav .nav-link.active{
+    color: #05da65;
+}
+
+
+/* Sombra para las letras del menú */
+.navbar-nav .nav-link {
+   /*  text-shadow: 2px 2px 31px rgb(255, 103, 1); /* Ajusta la distancia y opacidad de la sombra */ 
+}
+
+/* Opcional: sombra para el dropdown */
+.dropdown-menu {
+   
+}
+
+.navbar-nav {
+    background-color: #3534347f; /* Color de fondo semi-transparente */
+    padding: 0; /* Elimina el espacio extra en el ul */
+    border-radius: 8px; /* Mantén bordes redondeados si lo deseas */
+}
+
+.navbar-nav .nav-item {
+    margin: 0; /* Elimina el margen entre los elementos */
+    padding: 0; /* Elimina el padding en los items */
+}
+
+.navbar-nav .nav-link {
+    padding: 0 0px; /* Reduce el padding de los enlaces para acercar el texto */
+    line-height: 1.2; /* Ajusta la altura de línea para hacer el texto más compacto */
+    font-size: 14px; /* Puedes ajustar el tamaño de la fuente si es necesario */
+}
+
+.dropdown-menu {
+    margin: 0; /* Asegúrate de que no haya margen extra */
+    padding: 0; /* Elimina cualquier padding extra */
+    
+}
+
+/* Estilos personalizados para los testimonios */
+.testimonial-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.testimonial-item img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.testimonial-item h4 {
+    font-weight: bold;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    color: #777;
+}
+
+/* Título de la sección */
+.section-title h4 {
+    letter-spacing: 5px;
+    color: #007bff; /* Cambiar el color si lo prefieres */
+}
+
+.section-title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.owl-carousel .owl-item {
+    transition: all 0.3s ease;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.owl-nav .owl-prev, .owl-nav .owl-next {
+    background-color: #474747;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.product-card {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.06);
+}
+
+
+/*************menu ***************/
+.fixed-size {
+    width: 300px; /* Ajusta este valor según el tamaño deseado */
+    height: 300px; /* Ajusta este valor según el tamaño deseado */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo y posición fija del botón */
+.animated-button {
+    position: fixed;
+    bottom: 20px; /* Distancia desde el fondo de la pantalla */
+    left: 20px;  /* Distancia desde el lado izquierdo de la pantalla */
+    z-index: 999; /* Asegura que el botón esté por encima de otros elementos */
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    animation: bounce 1.5s infinite; /* Aplica la animación de rebote */
+    background-color: #01c0ffb8; /* Color del botón (puedes cambiarlo) */
+    color: white; /* Color del texto */
+    border-radius: 50px; /* Botón redondeado */
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Estado inicial */
+    }
+    40% {
+        transform: translateY(-10px); /* Sube ligeramente */
+    }
+    60% {
+        transform: translateY(-5px); /* Baja ligeramente */
+    }
+}
+
+/* Tamaño del botón */
+.animated-button {
+    padding: 10px 25px; /* Ajusta el tamaño del botón */
+    font-size: 18px; /* Tamaño de la fuente */
+}
+
+/* Estilo y posición fija del botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Distancia desde el fondo de la pantalla */
+    right: 20px;  /* Distancia desde el lado derecho de la pantalla */
+    z-index: 999; /* Asegura que el botón esté por encima de otros elementos */
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    animation: bounce 1.5s infinite; /* Aplica la animación de rebote */
+    background-color: #25D366; /* Color de WhatsApp */
+    color: white; /* Color del texto e icono */
+    border-radius: 50px; /* Botón redondeado */
+    font-size: 18px; /* Tamaño de la fuente */
+    padding: 15px 30px; /* Ajusta el tamaño del botón */
+    text-decoration: none; /* Elimina el subrayado */
+}
+.whatsapp-button::after {
+    content: ""; /* Remueve cualquier texto después del ícono */
+}
+
+
+/***************bot9on central */
+
+/* Contenedor para centrar el botón */
+.whatsapp-fixed-center {
+    position: fixed;
+    bottom: 50px; /* Distancia desde el fondo de la pantalla */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Ajuste para centrar perfectamente */
+    z-index: 999; /* Asegura que esté sobre otros elementos */
+}
+
+/* Estilo del botón de WhatsApp */
+.whatsapp-link-center {
+    display: inline-block;
+    background-color: #25D366; /* Color de WhatsApp */
+    color: white; /* Color del texto e icono */
+    border-radius: 50px; /* Botón redondeado */
+    font-size: 18px; /* Tamaño de la fuente */
+    padding: 15px 30px; /* Ajusta el tamaño del botón */
+    text-decoration: none; /* Elimina el subrayado */
+    transition: all 0.3s ease-in-out; /* Animación suave para hover */
+}
+
+/* Efecto hover */
+.whatsapp-link-center:hover {
+    background-color: #1ebe57; /* Color más oscuro al pasar el mouse */
+    color: #FFFFFF;
+}
+
+/* Remueve cualquier pseudo-elemento */
+.whatsapp-link-center::after {
+    content: none;
+}
+
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Estado inicial */
+    }
+    40% {
+        transform: translateY(-10px); /* Sube ligeramente */
+    }
+    60% {
+        transform: translateY(-5px); /* Baja ligeramente */
+    }
+}
+
+@media (max-width: 966px) {
+    .carousel-image-5 {
+        content: url('/img/carousel-52.png'); /* Reemplaza con la ruta de tu nueva imagen */
+    }
+}
+
+@media (max-width: 966px) {
+    .caption-5 {
+        transform: translate(0, 0); /* Restablece la transformación */
+        top: 95%; /* Coloca el caption en el centro verticalmente */
+        left: 35%; /* Coloca el caption en el centro horizontalmente */
+        transform: translate(-50%, -50%); /* Ajusta para centrarlo */
+        text-align: center; /* Centra el texto dentro del caption */
+    }
+
+    .caption-3{
+        transform: translate(0, 0); /* Restablece la transformación */
+        top: 18%; /* Coloca el caption en el centro verticalmente */
+        left: 35%; /* Coloca el caption en el centro horizontalmente */
+        transform: translate(-50%, -50%); /* Ajusta para centrarlo */
+        text-align: center; /* Centra el texto dentro del caption */
+    }
+}
+
+.image-container {
+    width: 100%;
+    height: 200px; /* Ajusta esta altura según tu diseño */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/******donaciones */
+
+#donations-volunteering {
+    background-color: #f8f9fa; /* Fondo claro para destacar */
+    padding: 60px 0;
+}
+
+#donations-volunteering h3 {
+    font-size: 28px;
+}
+
+#donations-volunteering p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#donations-volunteering img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/**************TESTIMONIA **/
+
+.testimonial-carousel .owl-dot{
+    background-color: #014721;
+}
