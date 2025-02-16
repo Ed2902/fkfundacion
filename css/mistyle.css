@@ -444,3 +444,35 @@ header {
 .testimonial-carousel .owl-dot{
     background-color: #014721;
 }
+
+
+/***************contadores*************/
+.contadores-kaaliawiri {
+    background-color: rgba(218, 214, 214, 0.408); /* Blanco semi-transparente */
+    background-image: url('/img/bg.jpg');       /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: lighten;             /* Mezcla la imagen con el color blanco */
+    color: #FFFFFF;
+    padding: 2rem 0;
+}
+
+.titulo-contador {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000; /* Bordeado negro */
+}
+
+.numero-contador {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-shadow: 3px 3px 5px #000000; /* Bordeado negro más intenso */
+}
+
+/* Nueva clase para personalizar solo los números con !important */
+.contador-numeros {
+    color: #442107 !important; /* Color dorado con prioridad */
+    text-shadow: 2px 2px 5px rgba(255, 254, 254, 0.967) !important; /* Bordeado suave */
+}
