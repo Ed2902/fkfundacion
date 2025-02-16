@@ -4,6 +4,9 @@
 #ffffff blanco principal
 *************/
 /* Justifica párrafos, listas y otros elementos de texto */
+
+
+
 p, ul, ol, li {
     text-align: justify;
 }
