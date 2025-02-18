@@ -377,29 +377,8 @@ header {
     }
 }
 
-@media (max-width: 966px) {
-    .carousel-image-5 {
-        content: url('/img/carousel-52.png'); /* Reemplaza con la ruta de tu nueva imagen */
-    }
-}
 
-@media (max-width: 966px) {
-    .caption-5 {
-        transform: translate(0, 0); /* Restablece la transformación */
-        top: 95%; /* Coloca el caption en el centro verticalmente */
-        left: 35%; /* Coloca el caption en el centro horizontalmente */
-        transform: translate(-50%, -50%); /* Ajusta para centrarlo */
-        text-align: center; /* Centra el texto dentro del caption */
-    }
 
-    .caption-3{
-        transform: translate(0, 0); /* Restablece la transformación */
-        top: 18%; /* Coloca el caption en el centro verticalmente */
-        left: 35%; /* Coloca el caption en el centro horizontalmente */
-        transform: translate(-50%, -50%); /* Ajusta para centrarlo */
-        text-align: center; /* Centra el texto dentro del caption */
-    }
-}
 
 .image-container {
     width: 100%;
