@@ -10,7 +10,7 @@ const counters = document.querySelectorAll('.counter');
 
             if (count < target) {
                 counter.innerText = Math.ceil(count + increment);
-                setTimeout(updateCount, 5);
+                setTimeout(updateCount, 10);
             } else {
                 counter.innerText = target;
             }
