@@ -455,3 +455,68 @@ header {
     color: #442107 !important; /* Color dorado con prioridad */
     text-shadow: 2px 2px 5px rgba(255, 254, 254, 0.967) !important; /* Bordeado suave */
 }
+
+
+/* Ajustar el tamaño del logo en pantallas pequeñas */
+@media (max-width: 500px) {
+    .logo {
+        width: 80px; /* Reducir tamaño del logo */
+        height: auto; /* Mantener proporción */
+    }
+
+    /* Ajustar el tamaño de las letras en el carrusel */
+    .carousel-caption {
+        bottom: 10%; /* Ajusta la posición para que quede dentro de la imagen */
+        width: 90%; /* Asegura que no se salga de la imagen */
+        text-align: center;
+        padding: 5px; /* Agregar espacio para mejor visibilidad */
+    }
+
+    .carousel-caption h1 {
+        font-size: 18px; /* Reducir el tamaño del título */
+        line-height: 1.2; /* Mejor espaciado */
+    }
+
+    .carousel-caption h2 {
+        font-size: 16px; /* Reducir subtítulos */
+    }
+
+    /* Ajustar todas las imágenes del carrusel */
+    .carousel-item img {
+        height: 250px; /* Asegurar que la imagen del carrusel no sea muy grande */
+        object-fit: cover; /* Ajuste para cubrir el área sin distorsionarse */
+    }
+
+    /* Específico para la segunda imagen */
+    .carousel-item:nth-child(2) img {
+        height: 250px !important; /* Asegurar que la segunda imagen cambia también */
+    }
+
+    /* Ocultar el logo de WhatsApp en este tamaño */
+    .whatsapp-button {
+        display: none !important;
+    }
+}
+
+/* Ajuste extra para móviles muy pequeños (375px y menos) */
+@media (max-width: 375px) {
+    .logo {
+        width: 60px; /* Aún más pequeño en pantallas muy reducidas */
+    }
+
+    .carousel-caption h1 {
+        font-size: 16px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 14px;
+    }
+
+    .carousel-item img {
+        height: 200px; /* Más pequeño para dispositivos muy pequeños */
+    }
+
+    .whatsapp-button {
+        display: none !important; /* Asegurar que WhatsApp desaparezca en móviles pequeños */
+    }
+}
