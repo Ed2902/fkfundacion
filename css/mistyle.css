@@ -477,12 +477,14 @@ header {
         line-height: 1; 
         text-align: center;
         margin-left: 15% !important;
+        margin-bottom: 35% !important;
     }
 
     .carousel-caption h2 {
         font-size: 16px !important; /* Reducir subtítulos */
-        margin-top: 20px !important;
+        margin-top: -85px !important;
         margin-left: 15% !important;
+       
     }
 
     /* Ajustar todas las imágenes del carrusel al tamaño de la pantalla */
@@ -503,7 +505,19 @@ header {
     .whatsapp-button {
         display: none !important;
     }
+
+    .navbar-toggler {
+        border-color: #014721 !important; /* Color del borde del botón */
+    }
+
+    .navbar-toggler-icon {
+        background-color: #014721 !important; /* Asegurar que mantiene el color en móviles */
+    }
 }
+
+
+
+
 
 /* Ajuste extra para móviles muy pequeños (375px y menos) */
 @media (max-width: 375px) {
