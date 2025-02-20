@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404 | Fundación Kaaliawiri</title>
+    
+    <!-- Favicon -->
+    <link href="../img/logo fundacion FK.webp" rel="icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: #014721; /* Verde oscuro */
+            color: #ffffff; /* Blanco */
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Logo */
+        .logo {
+            width: 150px;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Efecto de texto glitch */
+        .glitch {
+            font-size: 80px;
+            font-weight: 700;
+            text-transform: uppercase;
+            position: relative;
+            color: #ffffff; /* Blanco */
+            animation: glitch 1s infinite;
+        }
+
+        @keyframes glitch {
+            0% { text-shadow: 5px 5px 0px #442107, -5px -5px 0px #ffffff; }
+            50% { text-shadow: -5px -5px 0px #442107, 5px 5px 0px #ffffff; }
+            100% { text-shadow: 5px 5px 0px #442107, -5px -5px 0px #ffffff; }
+        }
+
+        .message {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* Animación del astronauta */
+        .astronaut {
+            width: 200px;
+            animation: float 3s ease-in-out infinite;
+            margin-top: 40px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Botón de regreso */
+        .btn-home {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            background: #442107; /* Café */
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .btn-home:hover {
+            transform: scale(1.1);
+            background: #ffffff;
+            color: #442107; /* Café */
+            border: 2px solid #442107;
+        }
+
+        /* Estrellas flotantes */
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin-top: 80%;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #ffffff;
+            opacity: 0.8;
+            animation: moveStar linear infinite;
+        }
+
+        @keyframes moveStar {
+            from { transform: translateY(-100px); opacity: 0; }
+            to { transform: translateY(100vh); opacity: 1; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Contenedor Principal -->
+    <div class="container">
+        <!-- Logo de la Fundación -->
+        <img src="../img/logo fundacion FK.webp" alt="Fundación Kaaliawiri" class="logo">
+
+        <h1 class="glitch">Error 404</h1>
+        <p class="message">Parece que te has perdido en el espacio... pero no te preocupes, ¡te llevamos de vuelta! 🚀</p>
+        
+        <!-- Astronauta flotante -->
+        <img src="../img/astro.webp" alt="Astronauta perdido" class="astronaut">
+        
+        <!-- Botón para volver al inicio -->
+        <a href="../index.html" class="btn-home">
+            <i class="bi bi-house-door-fill"></i> Regresar a Kaaliawiri
+        </a>
+    </div>
+
+ /
+
+</body>
+</html>
